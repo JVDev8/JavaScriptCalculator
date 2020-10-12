@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Code Pro', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: black;
+    font-size: 1.5rem;
+}
+
+.calculator {
+    position: relative;
+    display: grid;
+    background: rgb(6, 13, 19);
+    padding: 0.1rem;
+    border: 0.2rem solid rgba(255, 255, 255, 0.8);
+    border-radius: 0.5rem;
+}
+
+.calculator .value {
+    grid-column: span 4;
+    height: 7rem;
+    text-align: right;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    font-size: 1rem;
+    background: rgb(6, 13, 19);
+    color: white;
+}
+
+.calculator span {
+    display: grid;
+    width: 4rem;
+    height: 4rem;
+    background: rgb(49, 106, 155);
+    color: white;
+    place-items: center;
+    border: 0.1rem solid rgb(6, 13, 19);
+}
+
+.calculator span:active {
+    background: rgb(255, 153, 51);
+    color: white;
+}
+
+.calculator span.clear {
+    grid-column: span 4;
+    width: 16rem;
+    height: 3rem;
+    background: rgb(24, 53, 78);
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.calculator span.sign {
+    background: rgb(24, 53, 78);
+}
+
+.calculator .clear:active {
+    background: rgb(255, 153, 51);
+}
+
+.calculator .sign:active {
+    background: rgb(255, 153, 51);
+}
